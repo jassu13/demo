@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.154">
+  <properties />
+  
+  
+            <testcase name="verifyInvalidLogin" time="2.940" classname="testcases.TC2Login" />
+                <testcase name="verifyLogin" time="2.214" classname="testcases.TC2Login" />
+      
+</testsuite>

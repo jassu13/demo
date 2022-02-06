@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyStoreAutomationFramework2]" guice-stage="DEVELOPMENT">
+  <test name="Add To Cart Test(failed)">
+    <classes>
+      <class name="testcases.TC4AddCart">
+        <methods>
+          <include name="close"/>
+          <include name="clickCart"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- testcases.TC4AddCart -->
+    </classes>
+  </test> <!-- Add To Cart Test(failed) -->
+</suite> <!-- Failed suite [MyStoreAutomationFramework2] -->

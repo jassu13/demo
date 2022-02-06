@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Register Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.315">
+  <properties />
+  
+  
+            <testcase name="emptyFieldValidation" time="3.043" classname="testcases.TC1Register" />
+                <testcase name="registerUser" time="2.272" classname="testcases.TC1Register" />
+      
+</testsuite>

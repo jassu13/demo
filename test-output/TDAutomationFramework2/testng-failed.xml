@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TDAutomationFramework2]" guice-stage="DEVELOPMENT">
+  <test name="Login Test(failed)">
+    <classes>
+      <class name="testcases.TC1Register">
+        <methods>
+          <include name="close"/>
+          <include name="init"/>
+          <include name="regiterUser"/>
+        </methods>
+      </class> <!-- testcases.TC1Register -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [TDAutomationFramework2] -->

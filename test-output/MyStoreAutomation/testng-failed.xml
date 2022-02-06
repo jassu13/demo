@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MyStoreAutomation]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="base.CustomListeners"/>
+  </listeners>
+  <test name="Register Test(failed)">
+    <classes>
+      <class name="testcases.TC1Register">
+        <methods>
+          <include name="close"/>
+          <include name="emptyFieldValidation"/>
+          <include name="init"/>
+          <include name="registerUser"/>
+        </methods>
+      </class> <!-- testcases.TC1Register -->
+    </classes>
+  </test> <!-- Register Test(failed) -->
+</suite> <!-- Failed suite [MyStoreAutomation] -->
