@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MyStoreAutomation">
-              <span class="suite-name border-passed">MyStoreAutomation</span>
+              <span class="suite-name border-failed">MyStoreAutomation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-MyStoreAutomation">
-                    <span>C:\Workspace\FinalDemo\src\test\runner\functional.xml</span>
+                    <span>C:\Workspace\FinalDemo\src\test\runner\dataset.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MyStoreAutomation" class="hide-methods failed suite-MyStoreAutomation"> (hide)</a> <!-- hide-methods failed suite-MyStoreAutomation -->
+                      <a href="#" panel-name="suite-MyStoreAutomation" class="show-methods failed suite-MyStoreAutomation"> (show)</a> <!-- show-methods failed suite-MyStoreAutomation -->
+                    </span>
+                    <div class="method-list-content failed suite-MyStoreAutomation">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MyStoreAutomation" title="testcases.DatasetTest" hash-for-method="verifylogin(ytrt, 67h)">verifylogin(ytrt, 67h)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MyStoreAutomation -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,7 @@
                     <div class="method-list-content passed suite-MyStoreAutomation">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MyStoreAutomation" title="testcases.TC1Register" hash-for-method="emptyFieldValidation">emptyFieldValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MyStoreAutomation" title="testcases.TC1Register" hash-for-method="registerUser">registerUser</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MyStoreAutomation" title="testcases.DatasetTest" hash-for-method="verifylogin(Jasveer23@gmail.com, hello@123)">verifylogin(Jasveer23@gmail.com, hello@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MyStoreAutomation -->
@@ -122,24 +131,60 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MyStoreAutomation" class="panel MyStoreAutomation">
-          <div class="suite-MyStoreAutomation-class-passed">
+          <div class="suite-MyStoreAutomation-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.TC1Register</span>
+              <img src="failed.png"/>
+              <span class="class-name">testcases.DatasetTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="emptyFieldValidation">
-                  </a> <!-- emptyFieldValidation -->
-                  <span class="method-name">emptyFieldValidation</span>
+                  <a name="verifylogin(ytrt, 67h)">
+                  </a> <!-- verifylogin(ytrt, 67h) -->
+                  <span class="method-name">verifylogin</span>
+                  <span class="parameters">(ytrt, 67h)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Logout&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0SH0Q77&apos;, ip: &apos;10.0.0.96&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Jasveer\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e6e30ad4a2e760321ebf1aae0267369
+*** Element info: {Using=link text, value=Logout}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at pages.ExcelDemo.doLogin(ExcelDemo.java:36)
+	at testcases.DatasetTest.verifylogin(DatasetTest.java:23)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyStoreAutomation-class-failed -->
+          <div class="suite-MyStoreAutomation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.DatasetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="registerUser">
-                  </a> <!-- registerUser -->
-                  <span class="method-name">registerUser</span>
+                  <a name="verifylogin(Jasveer23@gmail.com, hello@123)">
+                  </a> <!-- verifylogin(Jasveer23@gmail.com, hello@123) -->
+                  <span class="method-name">verifylogin</span>
+                  <span class="parameters">(Jasveer23@gmail.com, hello@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +192,7 @@
         </div> <!-- panel MyStoreAutomation -->
         <div panel-name="test-xml-MyStoreAutomation" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Workspace\FinalDemo\src\test\runner\functional.xml</span>
+            <span class="header-content">C:\Workspace\FinalDemo\src\test\runner\dataset.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,11 +204,11 @@
     &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
     &lt;listener class-name=&quot;base.CustomListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Register Test&quot;&gt;
+  &lt;test name=&quot;DataDriven Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.TC1Register&quot;/&gt;
+      &lt;class name=&quot;testcases.DatasetTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Register Test --&gt;
+  &lt;/test&gt; &lt;!-- DataDriven Test --&gt;
 &lt;/suite&gt; &lt;!-- MyStoreAutomation --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,7 +220,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Register Test (1 class)</span>
+                <span class="test-name">DataDriven Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,18 +248,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'emptyFieldValidation')
-data.setCell(0, 2, 'testcases.TC1Register')
-data.setCell(0, 3, 3486);
+data.setCell(0, 1, 'verifylogin')
+data.setCell(0, 2, 'testcases.DatasetTest')
+data.setCell(0, 3, 31492);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'registerUser')
-data.setCell(1, 2, 'testcases.TC1Register')
-data.setCell(1, 3, 2501);
+data.setCell(1, 1, 'verifylogin')
+data.setCell(1, 2, 'testcases.DatasetTest')
+data.setCell(1, 3, 7668);
 window.suiteTableData['MyStoreAutomation']= { tableData: data, tableDiv: 'times-div-MyStoreAutomation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-MyStoreAutomation">
               </div> <!-- times-div-MyStoreAutomation -->
             </div> <!-- times-div -->
@@ -240,22 +285,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC1Register</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.DatasetTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">emptyFieldValidation</span>
-                <span class="method-start">7446 ms</span>
+                <span class="method-name">verifylogin(Jasveer23@gmail.com, hello@123)</span>
+                <span class="method-start">9939 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">registerUser</span>
-                <span class="method-start">11576 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifylogin(ytrt, 67h)</span>
+                <span class="method-start">18144 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">14195 ms</span>
+                <span class="method-start">50370 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

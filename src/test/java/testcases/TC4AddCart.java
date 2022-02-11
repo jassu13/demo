@@ -8,13 +8,14 @@ import com.relevantcodes.extentreports.LogStatus;
 import base.BaseClass;
 import pages.AddToCart;
 
+
 public class TC4AddCart extends BaseClass {
 
 	
 	
 	@Test
-	public void clickCart() throws InterruptedException {
-		test.log(LogStatus.INFO, "Add To Cart test started");
+	public void clickCart() {
+	test.log(LogStatus.INFO, "Add To Cart test started");
 		app_logs.info("Add To Cart test started");
 		AddToCart ac=new AddToCart(driver);
 		test.log(LogStatus.INFO, "Add To Cart Button Clicked");
@@ -23,6 +24,7 @@ public class TC4AddCart extends BaseClass {
 		test.log(LogStatus.INFO, "View Cart Button Clicked");
 		ac.viewCart();
 		ac.checkoutBtn(driver);
+		
 
 		String actual = driver.getTitle();
 		String expected="Shopping Cart";
@@ -31,5 +33,4 @@ public class TC4AddCart extends BaseClass {
 		test.log(LogStatus.INFO, "Add To Cart test completed");
 		
 	}
-					
-	}
+}

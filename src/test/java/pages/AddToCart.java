@@ -38,20 +38,19 @@ public class AddToCart extends BasePage {
 	@FindBy(xpath="//*[@id='cart']/ul/li[2]/div/p/a[1]")
 	public WebElement clickc;
 
-	
+
 
 	@FindBy(linkText="Checkout")
 	public WebElement chk;
 	
 
-	public void addCart() throws InterruptedException {
+	public void addCart() {
 	
     	cmpo.click();
     	dropdwn.click();
     	img.click();
     	qnt.clear();
     	qnt.sendKeys("3");
-    	Thread.sleep(3000);
     	
 	}
 	public void scrollBtn(WebDriver driver) { 
@@ -66,14 +65,14 @@ public class AddToCart extends BasePage {
 	vc.click();
 	clickc.click();
 	}
-	public void checkoutBtn(WebDriver driver) throws InterruptedException { 
+	
+
+	public void checkoutBtn(WebDriver driver) { 
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,650)", "");
 		chk.click();
-		Thread.sleep(3000);
 	
 		
 	}
-		
 
 	}

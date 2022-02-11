@@ -6,16 +6,15 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="base.CustomListeners"/>
   </listeners>
-  <test name="Register Test(failed)">
+  <test name="DataDriven Test(failed)">
     <classes>
-      <class name="testcases.TC1Register">
+      <class name="testcases.DatasetTest">
         <methods>
           <include name="close"/>
-          <include name="emptyFieldValidation"/>
           <include name="init"/>
-          <include name="registerUser"/>
+          <include name="verifylogin" invocation-numbers="1"/>
         </methods>
-      </class> <!-- testcases.TC1Register -->
+      </class> <!-- testcases.DatasetTest -->
     </classes>
-  </test> <!-- Register Test(failed) -->
+  </test> <!-- DataDriven Test(failed) -->
 </suite> <!-- Failed suite [MyStoreAutomation] -->

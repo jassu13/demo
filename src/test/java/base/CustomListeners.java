@@ -1,12 +1,14 @@
 package base;
 
+import java.io.IOException;
+
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import com.relevantcodes.extentreports.LogStatus;
-//import utilities.Utilities;
+import utilities.Utilities;
 
 
 
@@ -31,18 +33,17 @@ public class CustomListeners extends BaseClass implements ITestListener,ISuiteLi
 
 	public void onTestFailure(ITestResult arg0) {
 
-		//try {
-		//	utilities.captureScreenshot();
-	//	} catch (IOException e) {
-			// TODO Auto-generated catch block
-		//	e.printStackTrace();
-	//	}
+		try {
+		Utilities.captureScreenshot();
+	} catch (IOException e) {
+			e.printStackTrace();
+	}
 		//Below is for extent report, it will attach screenshot in the extent report
-		//test.log(LogStatus.FAIL, arg0.getName().toUpperCase()+" Failed with exception : "+arg0.getThrowable());
-		//test.log(LogStatus.INFO, test.addScreenCapture(Utilities.screenshotName));
+		test.log(LogStatus.FAIL, arg0.getName().toUpperCase()+" Failed with exception : "+arg0.getThrowable());
+		test.log(LogStatus.INFO, test.addScreenCapture(Utilities.screenshotName));
 		
-		//rep.endTest(test);
-		//rep.flush();
+		rep.endTest(test);
+		rep.flush();
 		
 	}
 

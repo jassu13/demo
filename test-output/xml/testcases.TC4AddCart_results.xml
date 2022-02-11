@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="11.553">
+           time="4.919">
   <properties />
   
   
-            <testcase name="clickCart" time="11.553" classname="testcases.TC4AddCart" />
+            <testcase name="clickCart" time="4.919" classname="testcases.TC4AddCart" />
       
 </testsuite>

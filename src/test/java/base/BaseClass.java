@@ -19,15 +19,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 import utilities.ExtentManager;
 //import utilities.Xls_Reader;
-
-
-
 public class BaseClass {
-
-	/*
-	 * Initialise Webdriver, properties, xls ,creating db connection, generating
-	 * logs
-	 */
 
 	public static Properties config = new Properties();
 	//public static Xls_Reader excel = null;
@@ -45,10 +37,6 @@ public ExtentReports rep = ExtentManager.getInstance();
 			System.getProperty("user.dir") + "\\src\\test\\properties\\config.properties");
 			config.load(fis);
 			app_logs.debug("loading the config property file");
-			// load excel file
-		//	excel = new Xls_Reader(
-		//	System.getProperty("user.dir") + "\\src\\test\\java\\busyqa\\properties\\testdata.xlsx");
-		//	app_logs.debug("loading the excel file");
 			if (config.getProperty("browser").equals("chrome")) {
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\src\\test\\executables\\chromedriver.exe");
 				driver = new ChromeDriver();
