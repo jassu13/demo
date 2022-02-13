@@ -14,13 +14,13 @@
 		<protocol>https</protocol>
 
 		<!-- title of the document -->
-		<documentTitle>BusyQA Software Testing Automation Reports</documentTitle>
+		<documentTitle>Software Testing Automation Reports</documentTitle>
 
 		<!-- report name - displayed at top-nav -->
 		<reportName>Automation Report for</reportName>
 
 		<!-- report headline - displayed at top-nav, after reportHeadline -->
-		<reportHeadline>Automation Framework</reportHeadline>
+		<reportHeadline>Final Demo </reportHeadline>
 
 		<!-- global date format override -->
 		<!-- defaults to yyyy-MM-dd -->

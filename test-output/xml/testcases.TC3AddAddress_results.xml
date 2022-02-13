@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.739">
+           time="3.056">
   <properties />
   
   
-            <testcase name="updateAdress" time="3.739" classname="testcases.TC3AddAddress" />
+            <testcase name="updateAdress" time="3.056" classname="testcases.TC3AddAddress" />
       
 </testsuite>

@@ -16,7 +16,6 @@ public class CustomListeners extends BaseClass implements ITestListener,ISuiteLi
 
 	public 	String messageBody;
 	public void onFinish(ITestContext arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 
@@ -27,7 +26,6 @@ public class CustomListeners extends BaseClass implements ITestListener,ISuiteLi
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 
